@@ -1,13 +1,19 @@
 # AzureServiceBus
 Azure Service Bus exercise
 
+# What does it do?
+
+- It uses a C# Azure ServiceBus trigger that categorizes a plain text file by size into small, medium, or large.
+- It uses a Python Azure Http Trigger that does sentiment analysis on json document. Classifies it as Negative, Neutral, or Positive.
+  - The second function is currently available at https://excercisepython.azurewebsites.net/api/ClassifySentimentAzureFunction?text=%22I%20am%20feeling%20a%20little%20happy%22
+
 
 ## Contains
 
--Single Azure ServiceBus method in standard C#
--Attempt at python language Azure Function for classification tasks.
+- Single Azure ServiceBus method in standard C#
+- Attempt at python language Azure Function for classification tasks.
 
-used npm install -g azure-functions-core-tools@3 --unsafe-perm true in PythonAzureFunctions (although v4 may be available). Had to clear cache and reinstall node 22.9.0, although likely only one or the other was needed.
+used `npm install -g azure-functions-core-tools@3 --unsafe-perm true` in PythonAzureFunctions (although v4 may be available). Had to clear cache and reinstall node 22.9.0, although likely only one or the other was needed.
 
 ## How to install python and run the python Azure function
 
